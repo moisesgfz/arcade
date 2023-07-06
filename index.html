@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pac-Man</title>
+  <!-- Enlace a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Enlace a archivo CSS personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Pac-Man</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Jugar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Instrucciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">¡Juega a Pac-Man ahora!</h1>
+      <p class="lead">Come todos los puntos y evita a los fantasmas para ganar.</p>
+      <a href="#" class="btn btn-primary btn-lg">Jugar ahora</a>
+    </div>
+  </div>
+
+  <!-- Sección de juego -->
+  <section id="game">
+    <div class="container">
+      <h2 class="text-center mb-5">¡Juega a Pac-Man ahora!</h2>
+      </div>
+    </div>
+  </section>
+
+<!-- Sección de historia -->
+<section id="history">
+    <div class="container">
+      <h2 class="text-center mb-5">Historia de Pac-Man</h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <p>Pac-Man es un juego de arcade desarrollado por Namco en 1980. El juego se convirtió en un éxito inmediato y es considerado uno de los juegos más influyentes de la historia. En el juego, los jugadores controlan a Pac-Man, un personaje amarillo que debe comer todos los puntos en un laberinto mientras evita a los fantasmas que lo persiguen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de personajes -->
+  <section id="characters">
+    <div class="container">
+      <h2 class="text-center mb-5">Personajes de Pac-Man</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="img/pacman.png" alt="Pac-Man">
+            <div class="card-body">
+              <h5 class="card-title">Pac-Man</h5>
+              <p class="card-text">El personaje principal del juego, Pac-Man es un personaje amarillo que debe comer todos los puntos en el laberinto.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="img/blinki.png" alt="Blinky">
+            <div class="card-body">
+              <h5 class="card-title">Blinky</h5>
+              <p class="card-text">Uno de los cuatro fantasmas del juego, Blinky es el más rápido y persigue a Pac-Man de manera agresiva.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+         <div class="card">
+            <img class="card-img-top" src="img/pinki.png" alt="Pinky">
+            <div class="card-body">
+              <h5 class="card-title">Pinky</h5>
+              <p class="card-text">Otro de los cuatro fantasmas del juego, Pinky se mueve de manera impredecible y a veces intenta emboscar a Pac-Man.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de consejos -->
+  <section id="tips">
+    <div class="container">
+      <h2 class="text-center mb-5">Consejos para jugar a Pac-Man</h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <ul>
+            <li>Come todos los puntos para avanzar al siguiente nivel.</li>
+            <li>Evita a los fantasmas o usa power-ups para comértelos.</li>
+            <li>Recoge las frutas para ganar puntos adicionales.</li>
+            <li>Aprende los patrones de movimiento de los fantasmas para evitarlos con mayor facilidad.</li>
+            <li>No te quedes en una misma área por mucho tiempo, los fantasmas te alcanzarán.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2021 Pac-Man</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline text-md-right">
+            <li class="list-inline-item"><a href="#">Política de privacidad</a></li>
+            <li class="list-inline-item"><a href="#">Términos y condiciones</a></li>
+            <li class="list-inline-item"><a href="#">Contáctanos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enlace a Bootstrap JS y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

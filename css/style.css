@@ -1,0 +1,242 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  a {
+    color: #ffc107;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ffca28;
+  }
+  
+ /* Navbar */
+.navbar {
+    background-color: #212121;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 50px;
+  }
+  
+  .navbar-brand img {
+    height: 70px;
+    width: auto;
+  }
+  
+  .navbar-nav {
+    margin-right: 50px;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107;
+  }
+  
+  /* Jumbotron */
+  .jumbotron {
+    background-color: #ffc107;
+    color: #212121;
+  }
+  
+  .jumbotron .container {
+    margin-top: 100px;
+  }
+  
+  .jumbotron h1 {
+    font-size: 72px;
+  }
+  
+  .jumbotron p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  /* Sección de juego */
+  #game {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f1ebeb;
+    padding: 80px 0;
+  }
+
+.game-board {
+  background-color: #212121;
+  border: 5px solid #ffc107;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-board .game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffc107;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+.game-board.game-over .game-over {
+  display: block;
+}
+
+.game-board .pacman {
+  position: absolute;
+  z-index: 100;
+  top: 280px;
+  left: 280px;
+  animation: pacman 0.2s linear infinite;
+}
+
+.game-board .ghost {
+  position: absolute;
+  z-index: 100;
+  animation: ghost 0.8s linear infinite;
+}
+
+.game-board .pellet {
+  position: absolute;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffc107;
+}
+
+.game-board .power-pellet {
+  position: absolute;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffc107;
+}
+
+@keyframes pacman {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-45deg); }
+  50% { transform: rotate(-90deg); }
+  75% { transform: rotate(-135deg); }
+  100% { transform: rotate(-180deg); }
+}
+
+@keyframes ghost {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0); }
+}
+  
+  /* Sección de historia */
+  #history {
+    background-color: #212121;
+    color: #fff;
+    padding: 80px 0;
+  }
+  
+  /* Sección de personajes */
+  #characters {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  .card {
+    background-color: #ffc107;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    color: #212121;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #212121;
+  }
+  
+  /* Sección de consejos */
+  #tips {
+    background-color: #212121;
+    color: #fff;
+    padding: 80px 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
